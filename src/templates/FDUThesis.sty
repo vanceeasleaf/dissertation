@@ -75,17 +75,18 @@ hyperfigures=true,%
 pdfauthor={Xu Deyuan}]{hyperref}
 
 %-----------------------------CJK Font Setup--------------------------!
-\usepackage[PunctStyle=kaiming,AutoFakeBold=false,AutoFakeSlant=false,indentfirst,CJKnumber]{xeCJK}
-\xeCJKDeclareSubCJKBlock{PUNC}{"FF1F}
-\setCJKmainfont[BoldFont={Songti SC Bold}, PUNC=SimSun] {Songti SC Light}
-\setCJKsansfont[BoldFont={Heiti SC Medium}]{Heiti SC}
-\setCJKmonofont[BoldFont={Hiragino Sans GB W6}]{Hiragino Sans GB W3}
+\usepackage[CJKnumber]{xeCJK}
+% \xeCJKDeclareSubCJKBlock{PUNC}{"FF1F}
+\setCJKmainfont[BoldFont={NSimSun},ItalicFont={KaiTi}] {NSimSun}
+\setCJKsansfont[BoldFont={SimHei}]{SimHei}
+\setCJKmonofont[BoldFont={FangSong}]{FangSong}
 
-\setCJKfamilyfont{zhxinsong}{SimSun}
-\setCJKfamilyfont{zhsong}[BoldFont={Songti SC Bold}]{Songti SC Light}
-\setCJKfamilyfont{zhhei}[BoldFont={Heiti SC Medium}]{Heiti SC}
+
+\setCJKfamilyfont{zhxinsong}{NSimSun}
+\setCJKfamilyfont{zhsong}[BoldFont={NSimSun}]{NSimSun}
+\setCJKfamilyfont{zhhei}[BoldFont={SimHei}]{SimHei}
 \setCJKfamilyfont{zhfs}{FangSong}
-\setCJKfamilyfont{zhkai}[BoldFont={Kaiti SC Bold}]{Kaiti SC Regular}
+\setCJKfamilyfont{zhkai}[BoldFont={KaiTi}]{KaiTi}
 \setCJKfamilyfont{zhli}{LiSu}
 \setCJKfamilyfont{zhyou}{YouYuan}
 
@@ -119,12 +120,12 @@ pdfauthor={Xu Deyuan}]{hyperref}
 \usepackage{fontspec,xltxtra,xunicode}
 \defaultfontfeatures{Mapping=tex-text}
 \setmainfont{Times New Roman}
-\setsansfont[Scale=MatchLowercase,Mapping=tex-text]{Helvetica}
+\setsansfont[Scale=MatchLowercase,Mapping=tex-text]{Times New Roman}
 \setmonofont[Scale=MatchLowercase]{Courier New}
 
-\newfontfamily{\AMT}{American Typewriter}
-\newfontfamily{\Curly}{Baskerville}
-\newfontfamily{\Fraktur}{Euclid Fraktur}
+\newfontfamily{\AMT}{Times New Roman}
+\newfontfamily{\Curly}{Times New Roman}
+\newfontfamily{\Fraktur}{Times New Roman}
 
 
 %Define Han Length

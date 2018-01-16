@@ -9,16 +9,19 @@
 \documentclass[a4paper, 12pt]{book}
 %Load FDU Style
 \usepackage{FDUThesis}
+% add reference for every chapter instead of at last
+ \usepackage[sectionbib]{chapterbib}
 \title{Pandoxie's Article}
-\author{Xu Deyuan $<$\href{mailto:xudeyuanghw@gmail.com}%
-            {xudeyuanghw@gmail.com}$>$}
+\author{Yang Zhou$<$\href{mailto:y_zhouy13@fudan.edu.cn}%
+            {y_zhouy13@fudan.edu.cn}$>$}
             
 %\date{}                                         % Activate to display a given date or no date
 
 \begin{document}
 %Use \thispagestyle{} fancy, plain, empty to redefine Per/Page Header
 
-\includepdf{Book-Cover.pdf}
+\includepdf{bookcover/bookcover.pdf}
+\include{forewords}
 \thispagestyle{empty}
 %----------------------------Front Matter-------------------------------!
 \frontmatter
@@ -32,7 +35,7 @@
 %\tableofcontents
 %\cleardoublepage}
 
-\include{Forewords}
+
 
 \listoffigures
 %\listoftables
@@ -40,17 +43,17 @@
 %----------------------------Main Matter-------------------------------!
 \mainmatter
 
-\include{Intro}
+\include{introduction}
+% 
+\include{chapter01/chapter01}
 
-\include{Chapter01}
-
-\include{Chapter02}
-
-\include{Chapter03}
-
-\include{Chapter04}
+\include{chapter02/chapter02}
+% 
+% \include{Chapter03}
+% 
+% \include{Chapter04}
 %----------------------------Appendix-------------------------------!
-\appendix 
+\appendix
 
 \renewcommand{\thechapter}{附录{\Alph{chapter}}}
 
@@ -61,8 +64,8 @@
 
 \phantomsection
 \addcontentsline{toc}{chapter}{\bibname}
-\bibliographystyle{FDUbib}
-\bibliography{Pandoxie-BiB}
+%zhouyang\bibliographystyle{FDUbib}
+%zhouyang\bibliography{ref}
 %\nocite{*}
 
 \backchapter{致谢}
@@ -70,4 +73,4 @@
 \clearpage
 \printindex
 
-\end{document} 
+\end{document}
