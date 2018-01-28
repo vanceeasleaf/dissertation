@@ -1,0 +1,4 @@
+[Makefile]
+charset = utf-8
+tab_width = 4
+indent_style = tab
