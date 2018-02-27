@@ -1,9 +1,9 @@
 % !TEX encoding = UTF-8 Unicode
 %!TEX TS-program = xelatex
 
-\chapter{集中参数模型的POGO稳定性分析}
+\chapter{分子动力学计算热导率}
 
-\section{液体火箭管路推进系统集中参数模型}
+\section{分子动力学}
 \label{sec:Lumped-Feedline-Model}
 \begin{figure}[!htb]
   \centering
@@ -46,6 +46,7 @@
   \label{FeedLine-TypicalElement}
 \end{figure}
 
+分子动力学是通过统计方法来研究材料性质的计算工具，在1946年计算机发明以后立刻使得对粒子的数值模拟成为了可能。
 液体推进火箭的管路系统主要由抽吸管路、多通接头、泵、泵后管路、燃烧室、推力室、蓄压器等几部分组成（如图\ref{FeedLine-TypicalElement}）。分析液体火箭流体系统动特性的方法有很多，这里采用工程上常用的集中参数分析法，又称LRC等效电路分析法\cite{Dimaggio:1972, Vaage:1972, YangMing:2010}。本节主要针对包含四管发动机的推进系统展开分析。假设四管发动机系统的结构是对称的，并且流体的流动状态也是对称的，可以将四管发动机系统简化为单管发动机系统进行处理。单管发动机管路系统各元件之间脉动压力和脉动流量的传递关系如图\ref{POGO-PipeLine}所示。
 
 \begin{figure}[!htb]

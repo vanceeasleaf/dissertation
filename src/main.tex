@@ -19,10 +19,11 @@
 
 \begin{document}
 %Use \thispagestyle{} fancy, plain, empty to redefine Per/Page Header
-
-\includepdf{bookcover/bookcover.pdf}
-\include{forewords}
+% 默认只导入第一页
+\includepdf[pages={1,2}]{bookcover/bookcover.pdf}
 \thispagestyle{empty}
+\include{forewords}
+
 %----------------------------Front Matter-------------------------------!
 \frontmatter
 %\maketitle
@@ -37,7 +38,7 @@
 
 
 
-\listoffigures
+%\listoffigures
 %\listoftables
 
 %----------------------------Main Matter-------------------------------!
@@ -68,7 +69,7 @@
 %zhouyang\bibliography{ref}
 %\nocite{*}
 
-\backchapter{致谢}
+\include{thanks}
 
 \clearpage
 \printindex
